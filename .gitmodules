@@ -7,9 +7,6 @@
 [submodule "js/libs/mustache"]
 	path = js/libs/mustache
 	url = git://github.com/janl/mustache.js.git
-[submodule "/Users/stenbaek/Sites/boilerGignal/js/isotope"]
-	path = /Users/stenbaek/Sites/boilerGignal/js/isotope
-	url = git://github.com/desandro/isotope.git
 [submodule "/Users/stenbaek/Sites/boilerGignal/js/libs/isotope"]
 	path = /Users/stenbaek/Sites/boilerGignal/js/libs/isotope
 	url = git://github.com/desandro/isotope.git
