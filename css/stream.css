@@ -1,0 +1,148 @@
+#gignal-widget {
+	overflow: hidden;
+	font-size: 80%;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#gignal-widget > div {
+	margin-bottom: 15px;
+}
+#gignal-widget > div:last-child {
+	margin-bottom: 0;
+}
+#gignal-images, #gignal-images a {
+	line-height: 0;
+	font-size: 0;
+}
+#gignal-images img {
+	width: 75px;
+	height: 75px;
+	margin: 0 1px 4px 0;
+}
+#gignal-images img:last-child {
+	/*margin-right: 0;*/
+}
+.gignal-thumbnail {
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin: 3px 5px;
+}
+.gignal-thumbnail img {
+	width: 48px;
+	height: 48px;
+}
+.gignal-username {
+	font-weight: bold;
+}
+.gignal-message {
+	float: left;
+	margin-left: 1px;
+	margin-bottom: 20px;
+	padding-top: 2px;
+	padding-bottom: 8px;
+	padding-right: 5px;
+	overflow: hidden;
+	box-shadow: 0 1px 3px #B3B3B3;
+	-webkit-box-shadow: 0 1px 3px #B3B3B3;
+	-moz-box-shadow: 0 1px 3px #E6E6E6;
+}
+.gignal-message-text {
+	margin-left: 60px;
+	margin-bottom: 0;
+}
+.gignal-message a {
+	text-decoration: none;
+}
+.gignal-message a:hover {
+	text-decoration: underline;
+}
+.gignal-capitalize {
+	text-transform: capitalize;
+}
+.gignal-quiet {
+	font-size: 85%;
+	color: #666;
+	margin-top: 2px;
+}
+.gignal-quiet a {
+	color: #666;
+}
+.gignal-quiet a:hover {
+	color: #333;
+}
+div.gignal-quiet i.logo {
+	float:left;
+	width: 16px;
+	height: 22px;
+	margin: 0 5px 0 2px;
+	display: inline-block;
+	outline: none;
+}
+div.gignal-quiet i.twitter {
+	background: transparent url("../img/icons/bird_16.png") no-repeat;
+	background-position:1px 4px;
+}
+div.gignal-quiet i.gowalla {
+	background: transparent url("../img/icons/gowalla-go-16.png") no-repeat;
+	background-position: 0 4px;
+}
+div.gignal-quiet i.foursquare {
+	background: transparent url("../img/icons/4sq_16.png") no-repeat;
+	background-position: 0 4px;
+}
+div.gignal-quiet i.facebook {
+	background: transparent url("../img/icons/f16.png") no-repeat;
+	background-position: 0 4px;
+}
+span.tweet-option {
+	margin-left:5px;
+}
+span.tweet-option a:hover {
+	text-decoration:none;
+}
+span.tweet-option a span i {
+	outline: none;
+	background: transparent url("../img/buttons/twitter/sprite-image.png") no-repeat;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px 0 2px;
+	display: inline-block;
+}
+span.tweet-option a span b {
+	font-weight:normal;
+}
+span.tweet-option a span b.over {
+	font-weight:normal;
+	text-decoration:underline;
+}
+span.tweet-option a span.fav i {
+	background-position:-32px 0px ;
+}
+span.tweet-option a span.fav i.over {
+	background-position:-48px 0px ;
+}
+span.tweet-option a span.reply i {
+	background-position:0px 0px ;
+}
+span.tweet-option a span.reply i.over {
+	background-position:-16px 0px ;
+}
+span.tweet-option a span.retweet i {
+	background-position:-177px 0px ;
+}
+span.tweet-option a span.retweet i.over {
+	background-position:-193px 0px ;
+}
+div.option-container {
+	float:right; 
+	width:250px
+}
+.tweet-option div.tweet-reply{
+	
+}
+.tweet-option div.tweet-retweet{
+	
+}
+.tweet-option div.tweet-fav{
+	
+}
