@@ -1,3 +1,9 @@
 [submodule "960-Grid-System"]
 	path = 960-Grid-System
 	url = git://github.com/nathansmith/960-Grid-System.git
+[submodule "js/libs/twitter-text"]
+	path = js/libs/twitter-text
+	url = git://github.com/twitter/twitter-text-js.git
+[submodule "js/libs/mustache"]
+	path = js/libs/mustache
+	url = git://github.com/janl/mustache.js.git
