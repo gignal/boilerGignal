@@ -1,1 +1,1 @@
-read the [wiki](https://github.com/webjay/boilerGignal/wiki)
+read the [wiki](https://github.com/gignal/boilerGignal/wiki)
