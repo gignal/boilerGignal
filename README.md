@@ -7,7 +7,7 @@
 
 Open index.html in your browser and hack away.
 
-The structure is based on [HTML5 Boilerplate](http://html5boilerplate.com/)
+The structure is based on [HTML5 Boilerplate](http://html5boilerplate.com/).
 
 ***
 
