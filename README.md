@@ -7,6 +7,8 @@
 
 Open index.html in your browser and hack away.
 
+The structure is based on [HTML5 Boilerplate](http://html5boilerplate.com/)
+
 ***
 
 Feel free to [fork us](http://help.github.com/fork-a-repo/), and please send us a [pull request](http://help.github.com/send-pull-requests/) if you create a cool visualization of the Gignal stream.
