@@ -1,4 +1,4 @@
-## How to get started with boilerGignal
+# How to get started with boilerGignal
 
 	git clone git://github.com/gignal/boilerGignal.git
 	cd boilerGignal
