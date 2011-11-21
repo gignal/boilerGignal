@@ -52,6 +52,9 @@
 			if (jQuery('#gignal-messages').attr('data-limit')) {
 				this.message_limit = jQuery('#gignal-messages').attr('data-limit');
 			}
+			if (jQuery('#gignal-messages-bottom').attr('data-limit')) {
+				this.message_limit = jQuery('#gignal-messages-bottom').attr('data-limit');
+			}
 			if (jQuery('#gignal-images').attr('data-limit')) {
 				this.image_limit = jQuery('#gignal-images').attr('data-limit');
 			}
@@ -113,13 +116,13 @@
 			msg += '{{#user_link}}<a href="{{{user_link}}}" title="{{name}}">{{/user_link}}<span class="gignal-username">{{username}}</span>{{#user_link}}</a>{{/user_link}}&nbsp;';
 			msg += '{{{message}}}';
 			msg += '<div class="gignal-quiet">';
-			msg += logo;
-			msg += '<a href="{{{permalink}}}"><time class="date" datetime="{{datetime}}">{{datetext}}</time></a>';
-			if (data.via == 'twitter'){
+			//msg += logo;
+			//msg += '<a href="{{{permalink}}}"><time class="date" datetime="{{datetime}}">{{datetext}}</time></a>';
+			/*if (data.via == 'twitter'){
 				msg += '<div class="option-container"><span class="tweet-option hide"><a href="http://twitter.com/intent/tweet?in_reply_to={{source_id}}"><span class="reply"><i></i><b>Reply</b></span></a></span>';
 				msg += '<span class="tweet-option hide" style="margin-left:5px"><a href="http://twitter.com/intent/retweet?tweet_id={{source_id}}"><span class="retweet"><i></i><b>Retweet</b></span></a></span>';
 				msg += '<span class="tweet-option hide" style="margin-left:5px"><a href="http://twitter.com/intent/favorite?tweet_id={{source_id}}"><span class="fav"><i></i><b>Favorite</b></span></a></span></div>';
-			}
+			}*/
 			msg += '</div></div></div>';
 			return Mustache.to_html(msg, data);
 		}
@@ -142,6 +145,9 @@
 					if (jQuery('#gignal-messages .gignal-message').length - 1 >= jQuery('#gignal-messages').attr('data-limit')) {
 						jQuery('#gignal-messages .gignal-message:last-child').remove();
 					}
+					if (jQuery('#gignal-messages-bottom .gignal-message').length - 1 >= jQuery('#gignal-messages-bottom').attr('data-limit')) {
+						jQuery('#gignal-messages-bottom .gignal-message:last-child').remove();
+					}
 					var image = (entry.Node.source == 'twitter') ? 'http://img.tweetimag.es/i/'+entry.Node.username+'_n' : entry.Node.thumbnail;
 					var link = (entry.Node.source == 'twitter') ? 'http://twitter.com/' + entry.Node.username : false;
 					var msg = formatMessage({
@@ -158,6 +164,8 @@
 						'permalink': entry.Node.permalink,
 						'source_id': entry.Node.source_id
 						});
+					jQuery('#gignal-messages-bottom').prepend(jQuery(jQuery('#gignal-messages').html()).hide().slideDown('slow'));
+					jQuery('#gignal-messages').empty();
 					jQuery('#gignal-messages').prepend(jQuery(msg).hide().slideDown('slow'));
 				}
 			}
@@ -194,12 +202,12 @@
 						jQuery('#gignal-images a:last-child').remove();
 					}
 					var image = Mustache.to_html('<a href="{{{link}}}"><img src="{{{src}}}" alt="" data-id="{{id}}" data-imgsrc="{{{large}}}" /></a>', {
-						'src': entry.Image.thumbnail,
+						'src': entry.Image.large,
 						'id' : entry.Image.id,
 						'link': entry.Image.link,
 						'large': entry.Image.large
 					});
-					jQuery('#gignal-images').prepend(image);
+					jQuery('#gignal-images').prepend(jQuery(image).hide().fadeIn('slow'));
 				}
 				var ww = jQuery('#gignal-images').width();
 				var iw = jQuery('#gignal-images img').width();
@@ -224,7 +232,7 @@
 			}
 			*/
 			// CSS fix
-			jQuery('#gignal-widget .gignal-status').width(jQuery('#gignal-messages').width());
+			//jQuery('#gignal-widget .gignal-status').width(jQuery('#gignal-messages').width());
 			jQuery('#gignal-widget .gignal-checkin').width(jQuery('#gignal-checkins').width() - 10);
 		}
 	}

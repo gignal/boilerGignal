@@ -52,7 +52,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; ba
 /*a { color: #00e6e7; }*/
 a { color: white; text-decoration: none;font-weight: bold;}
 /*a:visited { color: #551a8b; }*/
-a:visited { color: white; }
+a:visited { color: white; text-decoration: none;}
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */

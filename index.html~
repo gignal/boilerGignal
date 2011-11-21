@@ -61,7 +61,7 @@
 			<div id="gignal-stream">
 			
 			  <!--<div id="event-streamer"><img src="img/event-logo.png" /></div>-->
-			  <div id="gignal-images" data-limit="1"></div>
+			  <div id="gignal-images" class="gignal-main-image" data-limit="1"></div>
 			  <div id="gignal-logo"><img class="gignalLogoImage" src="img/gignal-dummy.png" /></div>
 			  <div id="gignal-messages" data-limit="1"></div>
 			  <div id="gignal-messages-bottom" data-limit="1"></div>
