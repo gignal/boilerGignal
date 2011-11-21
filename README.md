@@ -2,6 +2,7 @@
 
 	git clone git://github.com/gignal/boilerGignal.git
 	cd boilerGignal
+	git checkout swcph
 	git submodule init
 	git submodule update
 
